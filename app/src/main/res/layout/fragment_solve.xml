@@ -48,6 +48,7 @@
             android:background="@drawable/btn"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
+            android:paddingHorizontal="25dp"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
