@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.gaplc.app.start.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_solveFragment"
+            app:destination="@id/solveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/solveFragment"
+        android:name="com.example.gaplc.app.SolveFragment"
+        tools:layout="@layout/fragment_solve"
+        android:label="SolveFragment" >
+        <action
+            android:id="@+id/action_solveFragment_to_showFirstPopulationFragment"
+            app:destination="@id/showFirstPopulationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showFirstPopulationFragment"
+        android:name="com.example.gaplc.app.ShowFirstPopulationFragment"
+        android:label="ShowFirstPopulationFragment"
+        tools:layout="@layout/fragment_show_first_population">
+        <argument
+            android:name="populationNum"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_showFirstPopulationFragment_to_finaleFragment"
+            app:destination="@id/finaleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finaleFragment"
+        android:name="com.example.gaplc.app.FinaleFragment"
+        android:label="fragment_finale"
+        tools:layout="@layout/fragment_finale" >
+        <action
+            android:id="@+id/action_finaleFragment_to_solveFragment"
+            app:destination="@id/solveFragment"
+            app:popUpTo="@id/solveFragment" />
+        <argument
+            android:name="list"
+            app:argType="integer[]" />
+        <argument
+            android:name="generationNum"
+            app:argType="integer" />
+    </fragment>
+</navigation>

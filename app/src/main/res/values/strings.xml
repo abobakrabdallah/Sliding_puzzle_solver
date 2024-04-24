@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ga&amp;Plc</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_our_project">welcome to our project</string>
+    <string name="start">Start</string>
+    <string name="baklr_abo_elhamed">Baklr / Abo ElHamed</string>
+    <string name="sliding_puzzle_solver">Sliding Puzzle Solver</string>
+    <string name="enter_population_size">Enter Generation size</string>
+    <string name="show_slove">Show Solve</string>
+    <string name="or">OR</string>
+    <string name="solve_it_automatic">Solve it automatic</string>
+    <string name="first_population">First Step</string>
+    <string name="solve">Solve</string>
+    <string name="best_state_is">Best state is:</string>
+    <string name="generations_number_is">Generations number is :</string>
+    <string name="do_it_again">Do it again</string>
+</resources>
